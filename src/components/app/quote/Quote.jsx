@@ -1,0 +1,2 @@
+// displays a quote
+
