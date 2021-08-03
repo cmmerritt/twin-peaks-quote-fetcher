@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Button from '../../components/app/quote/Load';
 import Quote from '../../components/app/quote/Quote';
+import { getQuote } from '../../services/twinPeaksApi';
 
 const TwinPeaksQuote = () => {
 
