@@ -2,8 +2,17 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <p
+    class="quote"
+  />
+  <button>
+    <img
+      class="pie"
+      src="../../../public/assets/cherry-pie.png"
+    />
+  </button>
+  <span>
+    Click the pie for a damn fine quote...
+  </span>
 </DocumentFragment>
 `;
