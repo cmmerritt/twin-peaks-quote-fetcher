@@ -3,14 +3,28 @@ import React, { useState } from 'react';
 import Button from '../../components/app/quote/Load';
 import Quote from '../../components/app/quote/Quote';
 import { getQuote } from '../../services/twinPeaksApi';
+// import { useQuoteFetcher } from '../../state/quote';
 
 const TwinPeaksQuote = () => {
+  // const { quoteFetched, handleClick } = useQuoteFetcher();
+
+  const [quote, setQuote] = useState({});
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+
+    const quote = await getQuote();
+    console.log(quote);
+    setQuote(quote);
+  };
 
   return (
     <>
       <Quote
+        quote={quote}
       />
       <Button
+        onClick={handleClick}
       />
     </>
   );
