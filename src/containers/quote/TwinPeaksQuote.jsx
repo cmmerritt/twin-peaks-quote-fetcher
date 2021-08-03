@@ -11,8 +11,7 @@ const TwinPeaksQuote = () => {
   const handleClick = async () => {
 
     const res = await getQuote();
-    const quote = JSON.stringify(res);
-    console.log(quote);
+    const quote = JSON.stringify(res.quoteText);
     setQuote(quote);
   };
 
